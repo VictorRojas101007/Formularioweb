@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Decohogar</title>
+</head>
+
+<body>
+        <h1>Formulario de Consulta</h1>
+        <p>Llena estos datos y nos pondremos en contacto contigo</p>
+        <form id="Decohogar" action="https://formsubmit.co/o2454122@gmail.com" method="POST" />
+        <fieldset>
+                <label for="name">Ingresa tu nombre: <input required id="name" type="text" name="placeholder"
+                                placeholder="Ingresa tu nombre"></label>
+                <label for="email">Ingresa tu email: <input required id="email" type="email" name="email"
+                                placeholder="Ingresa tu email"></label>
+                <label for="number">¿Cuál es tu número?: <input required type="number" id="number" name="number"
+                                placeholder="Ingresa tu número con el código de país"></label>
+        </fieldset>
+        <fieldset>
+                <label>¿Qué tipo de vinil deseas?</label>
+                <select required name="vinilos" id="vinilos">
+                        <option value="selecciona">Seleccione uno</option>
+                        <option value="personalizados">Personalizado</option>
+                        <option value="estándar">Estándar</option>
+                </select><br>
+                <label for="persona">¿Para quién es el vinilo?</label><br>
+                <label for="adulto"><input required type="radio" id="adulto" name="persona" class="inline"
+                                value="adulto">Adulto</label>
+                <label for="niño"><input required type="radio" id="niño" name="persona" class="inline"
+                                value="niño">Niño</label>
+                <label for="anciano"><input required type="radio" id="anciano" name="persona" class="inline"
+                                value="anciano">Anciano</label><br>
+                <label for="profile-picture">Sube el diseño que buscas: <input id="profile-picture" name="file"
+                                type="file" name="file" /></label>
+                <label for="extraInfo">Ingresa detalles extras de tu pedido: <textarea name="extraInfo" id="extraInfo"
+                                placeholder="Ingresa los detalles" rows="3" cols="30"></textarea></label>
+        </fieldset>
+        <fieldset>
+                <label>Por donde te gustaría que te contactemos</label>
+                <label><input type="radio" name="contacto" value="email" class="inline">Email</label>
+                <label><input type="radio" name="contacto" value="Whatsapp" class="inline">Whatsapp</label><br>
+                <label>Cómo nos encontraste: </label>
+                <label><input type="checkbox" class="inline" name="Instagram" id="Instagram">Instagram</label>
+                <label><input type="checkbox" class="inline" name="Facebook" id="Facebook">Facebook</label>
+                <label><input type="checkbox" class="inline" name="Tik tok" id="Tik tok">Tik Tok</label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+        <input type="hidden" name="_next" value="https://formulariodecovictorrojas.netlify.app/">
+
+        </form>
+</body>
+
+</html>
